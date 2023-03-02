@@ -1,4 +1,64 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
+languageCode = 'zh-tw'
 title = 'My New Hugo Site'
-theme = universal
+theme = "universal"
+style = "violet"
+defaultContentLanguage = "zh-tw"
+
+[params]
+    disabled_logo = false
+    logo_text = "Universal"
+    logo = "img/logo.png"
+    logo_small = "img/logo-small.png"
+
+[params.topbar]
+    enable = true
+    text = "<p>最新訊息：</p>"
+
+[[menu.main]]
+    name       = "Home"
+    identifier = "memu.home"
+    url        = "/"
+    weight     = 1
+    
+[[menu.main]]
+    name       = "打工度假"
+    identifier = "memu.whv"
+    url        = ""
+    weight     = 2
+
+[[menu.main]]
+    name       = "入境"
+    identifier = "section.entry"
+    url        = ""
+    parent     = "memu.whv"
+    weight     = 1
+    post       = 1
+
+[[menu.main]]
+    name       = "保險"
+    url        = "/contact"
+    weight     = 1
+    parent     = "section.entry"
+
+[[menu.main]]
+    name       = "SIN"
+    identifier = "section.sin"
+    url        = ""
+    parent     = "memu.whv"
+    weight     = 2
+    post       = 1
+
+[[menu.main]]
+    name       = "在加生活"
+    identifier = "memu.life"
+    url        = ""
+    weight     = 3
+
+[[menu.main]]
+    name       = "各省比較"
+    identifier = "section.provinces"
+    url        = ""
+    parent     = "memu.life"
+    weight     = 1
+    post       = 1
