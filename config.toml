@@ -28,26 +28,54 @@ defaultContentLanguage = "zh-tw"
     weight     = 2
 
 [[menu.main]]
-    name       = "入境"
-    identifier = "section.entry"
-    url        = ""
+    name       = "打工度假申請"
+    identifier = "section.whv_apply"
     parent     = "memu.whv"
     weight     = 1
-    post       = 1
+    post       = 2
 
 [[menu.main]]
-    name       = "保險"
+    name       = "入池申請"
     url        = "/contact"
+    weight     = 1
+    parent     = "section.whv_apply"
+
+[[menu.main]]
+    name       = "遞交資料"
+    url        = "/entry/file"
+    weight     = 2
+    parent     = "section.whv_apply"
+
+[[menu.main]]
+    name       = "入境"
+    identifier = "section.entry"
+    parent     = "memu.whv"
+    weight     = 1
+    post       = 3
+
+[[menu.main]]
+    name       = "行前準備"
+    url        = "/faq"
     weight     = 1
     parent     = "section.entry"
 
 [[menu.main]]
-    name       = "SIN"
-    identifier = "section.sin"
-    url        = ""
-    parent     = "memu.whv"
+    name       = "機場入境流程"
+    url        = "/entry/airport"
     weight     = 2
-    post       = 1
+    parent     = "section.entry"
+
+[[menu.main]]
+    name       = "保險"
+    url        = "/faq"
+    weight     = 3
+    parent     = "section.entry"
+
+[[menu.main]]
+    name       = "SIN"
+    url        = "/entry/sin"
+    weight     = 4
+    parent     = "section.entry"
 
 [[menu.main]]
     name       = "在加生活"
@@ -56,9 +84,90 @@ defaultContentLanguage = "zh-tw"
     weight     = 3
 
 [[menu.main]]
+    name       = "生活資訊"
+    identifier = "section.info"
+    parent     = "memu.life"
+    weight     = 1
+    post       = 2
+
+[[menu.main]]
     name       = "各省比較"
-    identifier = "section.provinces"
+    url        = "/"
+    weight     = 1
+    parent     = "section.info"
+
+[[menu.main]]
+    name       = "交通"
+    url        = "/"
+    weight     = 2
+    parent     = "section.info"
+
+[[menu.main]]
+    name       = "租屋"
+    url        = "/"
+    weight     = 3
+    parent     = "section.info"
+
+[[menu.main]]
+    name       = "觀光資訊"
+    url        = "/"
+    weight     = 4
+    parent     = "section.info"
+
+[[menu.main]]
+    name       = "-"
+    identifier = "section.info_2"
     url        = ""
     parent     = "memu.life"
     weight     = 1
-    post       = 1
+    post       = 3
+
+[[menu.main]]
+    name       = "超市購物"
+    url        = "/"
+    weight     = 1
+    parent     = "section.info_2"
+
+[[menu.main]]
+    name       = "必備APP/網站"
+    url        = "/"
+    weight     = 2
+    parent     = "section.info_2"
+
+[[menu.main]]
+    name       = "最新羊毛"
+    url        = "/"
+    weight     = 3
+    parent     = "section.info_2"
+
+[[menu.main]]
+    name       = "重點必備"
+    identifier = "section.need"
+    url        = ""
+    parent     = "memu.life"
+    weight     = 1
+    post       = 4
+
+[[menu.main]]
+    name       = "銀行開戶/信用卡"
+    url        = "/"
+    weight     = 1
+    parent     = "section.need"
+
+[[menu.main]]
+    name       = "手機電信"
+    url        = "/life/phone"
+    weight     = 2
+    parent     = "section.need"
+
+[[menu.main]]
+    name       = "駕照"
+    url        = "/"
+    weight     = 3
+    parent     = "section.need"
+
+[[menu.main]]
+    name       = "報稅"
+    url        = "/"
+    weight     = 4
+    parent     = "section.need"

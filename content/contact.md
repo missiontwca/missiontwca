@@ -1,6 +1,11 @@
 ---
 title: "contact" 
-id: "contact" 
+date: "2022-03-08"
+draft: "false"
 ---
 
-We are here to help you
+## 我的文章
+
+請[點擊此處][FAQ] 。
+
+[FAQ]: /faq
