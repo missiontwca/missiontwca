@@ -1,0 +1,35 @@
++++
+title = "test"
+date = "2017-12-29T12:15:02-00:00"
+categories = ["test"]
+tags = ["test"]
++++
+<h1>
+	Welcome
+</h1>
+<p>
+    <button id="alertBtn">按下這裡查看天氣</button>
+</p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	var api_key = "2f6736739fc824f25ae26fb32d917a79"; // 請替換成您的 API 金鑰
+	var city = "Taipei"; // 請替換成您要查詢的城市名稱
+	$('#alertBtn').click(function() {
+		$.ajax({
+			url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api_key,
+			method: "GET",
+			dataType: "json",
+			success: function(data) {
+				var weather = data.weather[0].description;
+				var temp = Math.round(data.main.temp - 273.15);
+				alert("台北市的天氣狀況為 " + weather + "，溫度約為 " + temp + " 度。");
+			},
+			error: function(error) {
+				alert("無法取得天氣資訊，請稍後再試。");
+			}
+		});
+	});
+});
+</script>
+

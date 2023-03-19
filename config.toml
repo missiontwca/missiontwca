@@ -55,7 +55,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "行前準備"
-    url        = "/faq"
+    url        = "/test"
     weight     = 1
     parent     = "section.entry"
 
