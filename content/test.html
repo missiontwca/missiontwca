@@ -17,13 +17,14 @@ $(document).ready(function() {
 	var city = "Taipei"; // 請替換成您要查詢的城市名稱
 	$('#alertBtn').click(function() {
 		$.ajax({
-			url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api_key,
+			url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&lang=zh_tw&appid=" + api_key,
 			method: "GET",
 			dataType: "json",
 			success: function(data) {
 				var weather = data.weather[0].description;
 				var temp = Math.round(data.main.temp - 273.15);
-				alert("台北市的天氣狀況為 " + weather + "，溫度約為 " + temp + " 度。");
+				var feels_like = Math.round(data.main.feels_like - 273.15);
+				alert("台北市的天氣" + weather + "，溫度： " + temp + " 度。體感溫度：" + feels_like + "。");
 			},
 			error: function(error) {
 				alert("無法取得天氣資訊，請稍後再試。");

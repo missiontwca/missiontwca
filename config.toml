@@ -92,7 +92,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "各省比較"
-    url        = "/"
+    url        = "/life/provinces"
     weight     = 1
     parent     = "section.info"
 
@@ -130,7 +130,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "必備APP/網站"
-    url        = "/"
+    url        = "/life/app"
     weight     = 2
     parent     = "section.info_2"
 
