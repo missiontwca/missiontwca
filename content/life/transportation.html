@@ -1,0 +1,52 @@
++++
+title = "交通"
++++
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div>
+    <button class="clBtProvinces btn btn-primary" id="btnBC" value="BC" >卑詩省 BC</button>
+    <button class="clBtProvinces" id="btnON" value="ON" >安大略省 ON</button>
+    <button class="clBtProvinces" id="btnQC" value="QC" >魁北克省 QC</button>
+    <button class="clBtProvinces" id="btnNL" value="NL" >紐芬蘭與拉布拉多省 NL</button>
+</div>
+
+<div class="clTextProvinces" id="textBC" style="display: none;">
+    Compass卡<br>
+    購買地點：<br>
+    機場、各Skytrain或渡輪站、Waterfront Station、London Drugs、線上購買：空卡CAD$6元。<br>
+    線上儲值:<br>
+    官方網站。可設定由信用卡/銀行帳戶自動儲值。<br>
+    費率：<br>
+    上下車皆需刷卡，90分鐘內可轉乘Skytrain及公車，只需一段票。<br>
+    </div>
+</div>
+
+<div class="clTextProvinces" id="textON" style="display: none;">
+    Presto卡<br>
+    購買地點：<br>
+    機場、各TTC或GO站機器、Shoppers超市、線上購買：空卡CAD$6元。<br>
+    多倫多圖書館（Toronto Public Library）：免費領取。<br><br>
+
+    線上儲值:<br>
+    官方網站、App付款後，用手機感應卡片。可設定由金融卡/信用卡自動儲值。<br><br>
+
+    費率：<br>
+    不論距離，不限地鐵公車，2小時內轉乘只需一段票，但需再次刷卡。<br>
+    計次，每次CAD$3.30元<br>
+    月票，每月CAD$156元，每月超過49趟時較划算<br>
+    年票，每月平均CAD$143元<br>
+</div>
+
+<script>
+  $(document).ready(function(){
+    //顯示該省內容
+    $(".clBtProvinces").click(function() {
+        $(".clTextProvinces").hide();
+        $("#text"+this.value).show();
+  });
+});
+</script>
+
+</body>

@@ -98,7 +98,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "交通"
-    url        = "/"
+    url        = "/life/transportation"
     weight     = 2
     parent     = "section.info"
 
