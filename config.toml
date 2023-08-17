@@ -104,7 +104,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "租屋"
-    url        = "/"
+    url        = "/life/rent"
     weight     = 3
     parent     = "section.info"
 

@@ -1,0 +1,117 @@
++++
+title = "租屋"
+draft = "false"
++++
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            right: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+        .sidebar a.active {
+            background-color: #38a7bb;
+            color: white;
+        }
+        .sidebar a:hover:not(.active) {
+            background-color: #999999;
+            color: white;
+        }
+        div.content {
+            margin-right: 0px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                right: auto;
+            }
+            .sidebar a {
+                float: left;
+            }
+            div.content {
+                margin-right: 0;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a class="active" href="#site">常用找房網站</a>
+        <a href="#house_type">房屋類型</a>
+        <a href="#contract">合約種類</a>
+        <a href="#warning">注意事項</a>
+    </div>
+
+    <div class="content" id="site">
+        <h2>site</h2>
+        <p>site content常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站常用找房網站</p>
+    </div>
+
+    <div class="content" id="house_type">
+        <h2>house type</h2>
+        <p>house type content</p>
+    </div>
+
+    <div class="content" id="contract">
+        <h2>contract</h2>
+        <p>contract content</p>
+    </div>
+
+    <div class="content" id="warning">
+        <h2>warning</h2>
+        <p>warning content</p>
+    </div>
+
+    
+    <script>
+        function showContent(contentId) {
+            var contentElements = document.getElementsByClassName('content');
+            for (var i = 0; i < contentElements.length; i++) {
+            contentElements[i].style.display = 'none';
+            }
+            var selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+            selectedContent.style.display = 'block';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidebarLinks = document.querySelectorAll('.sidebar a');
+            
+            for (var i = 0; i < sidebarLinks.length; i++) {
+            sidebarLinks[i].addEventListener('click', function(event) {
+                var contentId = event.currentTarget.getAttribute('href').substring(1);
+                showContent(contentId);
+            });
+            }
+            showContent('site');
+        });
+    </script>
+</body>
