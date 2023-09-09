@@ -1,51 +1,56 @@
 +++
 title = "各省比較"
 +++
+
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-<div>
+  <p>氣候、租金、大眾運輸</p>
+
+
+  <div>
     <button id="btnBC">卑詩省 BC</button>
     <button id="btnON">安大略省 ON</button>
-</div>
+  </div>
 
-<div id="textBC" style="display: none;">
+  <div id="textBC" style="display: none;">
     這是BC省
-    <div id = "divBC">
+    <div id="divBC">
     </div>
-</div>
+  </div>
 
-<div id="textON" style="display: none;">
+  <div id="textON" style="display: none;">
     這是ON省
-</div>
+  </div>
 
-<script>
-  $(document).ready(function(){
-      $("#btnBC").click(function() {
-      $("#textBC").show();
-      $("#textON").hide();
-  });
-  $("#btnON").click(function() {
-      $("#textBC").hide();
-      $("#textON").show();
-  });
+  <script>
+    $(document).ready(function () {
+      $("#btnBC").click(function () {
+        $("#textBC").show();
+        $("#textON").hide();
+      });
+      $("#btnON").click(function () {
+        $("#textBC").hide();
+        $("#textON").show();
+      });
 
-const api_key = "2f6736739fc824f25ae26fb32d917a79";
-const city = "Vancouver";
-const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + api_key;
-$.ajax({
-  url: url,
-  method: "GET",
-  success: function(data){
-    var temperature = data.main.temp;
-    $("#divBC").html(temperature + "°C");
-  },
-  error: function(jqXHR, textStatus, errorThrown){
-    console.log("AJAX Error: " + textStatus + " " + errorThrown);
-  }
-});
-});
-</script>
+      const api_key = "2f6736739fc824f25ae26fb32d917a79";
+      const city = "Vancouver";
+      const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + api_key;
+      $.ajax({
+        url: url,
+        method: "GET",
+        success: function (data) {
+          var temperature = data.main.temp;
+          $("#divBC").html(temperature + "°C");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log("AJAX Error: " + textStatus + " " + errorThrown);
+        }
+      });
+    });
+  </script>
 
 </body>

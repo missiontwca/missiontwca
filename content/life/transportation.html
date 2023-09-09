@@ -1,52 +1,205 @@
 +++
 title = "交通"
+draft = "false"
 +++
+
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Style the tab */
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 20%;
+      height: 1500px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #a7dbe5;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #80cbd9;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 80%;
+      border-left: none;
+      height: 1500px;
+    }
+  </style>
 </head>
+
 <body>
-<div>
-    <button class="clBtProvinces btn btn-primary" id="btnBC" value="BC" >卑詩省 BC</button>
-    <button class="clBtProvinces" id="btnON" value="ON" >安大略省 ON</button>
-    <button class="clBtProvinces" id="btnQC" value="QC" >魁北克省 QC</button>
-    <button class="clBtProvinces" id="btnNL" value="NL" >紐芬蘭與拉布拉多省 NL</button>
-</div>
+  <div class="tab">
+    <button class="tablinks" onclick="option(event, 'BC')" id="default_open">卑詩省（BC）</button>
+    <button class="tablinks" onclick="option(event, 'ON')">安大略省（ON）</button>
+    <button class="tablinks" onclick="option(event, 'NL')">紐芬蘭與拉布拉多省（NL）</button>
+  </div>
 
-<div class="clTextProvinces" id="textBC" style="display: none;">
-    Compass卡<br>
-    購買地點：<br>
-    機場、各Skytrain或渡輪站、Waterfront Station、London Drugs、線上購買：空卡CAD$6元。<br>
-    線上儲值:<br>
-    官方網站。可設定由信用卡/銀行帳戶自動儲值。<br>
-    費率：<br>
-    上下車皆需刷卡，90分鐘內可轉乘Skytrain及公車，只需一段票。<br>
-    </div>
-</div>
+  <div id="BC" class="tabcontent">
+    <h3>British Columbia（BC）</h3>
+    <p>📣 於 Tap to Win 活動期間（2023年8月17日 - 2023年10月31日）上網登記Compass卡，搭乘大眾運輸，最高有機會贏得5年免費搭乘！<a href="https://www.translink.ca/rider-guide/tap-in-to-win">（活動詳情）</a></p>
+    <p>⚠️ 自2023年7月1日起，票價調漲。</p>
+    <p>
+      溫哥華地區的大眾運輸工具主要為SkyTrain（捷運）、SeaBus（渡輪）、公車，由TransLink公司提供服務。而溫哥華以外的其他BC省地區只有BC Transit公司運營的公車。
+    </p>
+    <ol>
+      <li>
+        支付方式：<br>
+        現金、Compass交通卡、信用卡感應、行動支付（Apple Pay、Google Pay、Samsung Pay），Skytrain上下車皆需刷卡，公車則為上車時刷卡。<br>
+        ❗ 注意：SkyTrain如未在下車時刷卡，則會被扣除最高金額。
+      </li>
+      <br>
+      <li>
+        費用：
+        <img src="https://i.imgur.com/KOnXyAq.png" alt="Fare Table">
+        <ul>
+          <li>12歲以下免費。</li>
+          <li>90分鐘內轉乘（包含不同交通工具）免費。</li>
+          <li>機場線之YVR Airport、Sea Island Centre、Templeton Canada Line三站額外收費$5元。</li>
+          <li>所有公車只收取一段Zone 1票價。</li>
+          <li>週一至五18:30以後、例假日，全區以Zone 1計費。機場三站仍需加價。</li>
+        </ul>
+      </li>
+      <br>
+      <li>
+        票卡購買地點：
+        <ul>
+          <li>compasscard.ca（線上購買）</li>
+          <li>各SkyTrain、SeaBus、West Coast Express站點售票機</li>
+          <li>Waterfront Station客服中心</li>
+          <li>London Drugs、Shoppers、Seven Eleven...等商店之部分店家<a href="https://www.translink.ca/transit-fares/where-to-buy/where-to-buy-text-only">（列表）</a>。</li>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1CUA8USvUHI50nz_VdttIVBXGy98&ehbc=2E312F" width="450" height="250"></iframe>
+        </ul>
+        🗃️ 空卡押金$6元，日後退卡時會退還。
+      </li>
+      <br>
+      <li>
+        註冊與儲值：<br>
+        線上<a href="https://www.compasscard.ca/RegisterCompassCard">註冊</a>後，可進行<a href="">儲值</a>及設定自動加值，遺失時亦可立刻進行掛失，以停止該卡片的任何交易。<br>
+        自動加值：於卡片餘額低於$5元時，自銀行帳戶自動扣款儲值，或定期扣款延續月票。<br>
+      </li>
+    </ol>
+  </div>
 
-<div class="clTextProvinces" id="textON" style="display: none;">
-    Presto卡<br>
-    購買地點：<br>
-    機場、各TTC或GO站機器、Shoppers超市、線上購買：空卡CAD$6元。<br>
-    多倫多圖書館（Toronto Public Library）：免費領取。<br><br>
+  <div id="ON" class="tabcontent">
+    <h3>Ontario（ON）</h3>
+    <p>📣 好消息！2023年8月15日起，各大眾運輸開放刷信用卡、debit cards搭乘。</p>
+    <p>多倫多的主要大眾運輸包含TTC公司提供的Streetcar（街車）、Subway（地鐵）、公車。如要前往ON省其他區域，則可以利用GO Transit公司的火車、公車，或是UP Express（機場快線）。前述交通工具皆可通用Presto票卡支付。</p>
+    <ol>
+      <li>
+        支付方式：<br>
+        現金購票、Presto交通卡、信用卡或金融卡、綁定信用卡之行動支付。
+      </li>
+      <li>
+        費用：<br>
+        <ul>
+          <li>2小時內可免費轉乘，但仍需再次刷卡。</li>
+          <li>月票，每月超過49趟時較划算</li>
+          <li>如餘額不足被扣至負數，下次儲值需多繳$0.25元罰金後，方可使用。</li>
+        </ul>
+      </li>
+      <li>
+        票卡購買地點：<br>
+        機場、各TTC或GO車站售票機、Shoppers Drug Mart。<br>
+        🎉 多倫多圖書館（Toronto Public Library）免費領取。 🎉
+      </li>
+      <li>
+        註冊與儲值：<br>
+        官方網站、App付款後，用手機感應卡片。可設定由金融卡/信用卡自動儲值。
+      </li>
+    </ol>
+  </div>
 
-    線上儲值:<br>
-    官方網站、App付款後，用手機感應卡片。可設定由金融卡/信用卡自動儲值。<br><br>
+  <div id="NL" class="tabcontent">
+    <h3>Newfoundland and Labrador（NL）</h3>
+    <p>
+      在紐芬蘭僅有一種大眾運輸工具，即為公車(Metrobus)，且運行範圍基本上只涵蓋St. John's市區。
+    </p>
+    <ol>
+      <li>
+        支付方式：<br>
+        現金、m-card交通卡，上車時支付。
+      </li>
+      <br>
+      <li>
+        費用：
+        <img src="https://i.imgur.com/KOnXyAq.png" alt="Fare Table">
+        <ul>
+          <li>12歲以下免費，但9-11歲需出示<a href="https://www.metrobus.com/Under12/">免費版m-card</a>證明。</li>
+          <li>學期票僅限post-secondary學生購買。</li>
+          <li>免費轉乘不同路線，只會扣除一趟票價，現金支付者請於上車時向司機索取轉乘票。</li>
+        </ul>
+      </li>
+      <br>
+      <li>
+        票卡購買地點：
+        <ul>
+          <li>Avalon Mall (Customer Service Centre)</li>
+          <li>Memorial University, University Centre, The Attic</li>
+          <li>College of the North Atlantic (Cashier's Office/Book Store)</li>
+          <li>Marine Institute (The Campus Store)</li>
+          <li>St. John's City Hall (Cashier's Office)</li>
+          <li>Shoppers Drug Mart (Churchill Square、Freshwater Road、LeMarchant Road、Torbay Road Mall、Topsail Road, St. John's)</li>
+          <li>Metrobus Transit Centre, 25 Messenger Drive</li>
+          <li>Metrobus.com e-Store</li>
+        </ul>
+        ⚠️ 空卡售價$5元，機場並無販售！
+      </li>
+      <br>
+      <li>
+        註冊與儲值：<br>
+        購買交通卡後，即可至<a href="https://www.metrobus.com/mcard/register_card.asp">官網</a>註冊卡號，並可連結Airmiles集點。<a href="https://www.metrobus.com/estore/Clover/store.asp">線上儲值</a>後，所購買趟數立即生效，支付方式：Debit cards、VISA、Mastercard、美國運通卡。
+      </li>
+    </ol>
+  </div>
 
-    費率：<br>
-    不論距離，不限地鐵公車，2小時內轉乘只需一段票，但需再次刷卡。<br>
-    計次，每次CAD$3.30元<br>
-    月票，每月CAD$156元，每月超過49趟時較划算<br>
-    年票，每月平均CAD$143元<br>
-</div>
-
-<script>
-  $(document).ready(function(){
-    //顯示該省內容
-    $(".clBtProvinces").click(function() {
-        $(".clTextProvinces").hide();
-        $("#text"+this.value).show();
-  });
-});
-</script>
-
+  <script>
+    function option(evt, option_name) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(option_name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("default_open").click();
+  </script>
 </body>

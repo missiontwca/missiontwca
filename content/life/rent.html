@@ -14,7 +14,7 @@ draft = "false"
         }
         /* Style the tab */
         .tab {
-            float: right;
+            float: left;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 20%;
@@ -29,7 +29,7 @@ draft = "false"
             width: 100%;
             border: none;
             outline: none;
-            text-align: center;
+            text-align: left;
             cursor: pointer;
             transition: 0.3s;
             font-size: 17px;
@@ -44,11 +44,11 @@ draft = "false"
         }
         /* Style the tab content */
         .tabcontent {
-            float: right;
+            float: left;
             padding: 0px 12px;
             border: 1px solid #ccc;
             width: 80%;
-            border-right: none;
+            border-left: none;
             height: 600px;
         }
     </style>
@@ -59,7 +59,8 @@ draft = "false"
         <button class="tablinks" onclick="option(event, 'sites')" id="default_open">常用找房網站</button>
         <button class="tablinks" onclick="option(event, 'house_type')">房屋類型</button>
         <button class="tablinks" onclick="option(event, 'contract')">合約種類</button>
-        <button class="tablinks" onclick="option(event, 'faq')">FAQ</button>
+        <button class="tablinks" onclick="option(event, 'warning')">注意事項</button>
+        <button class="tablinks" onclick="option(event, 'provinces')">各省比較</button>
     </div>
 
     <div id="sites" class="tabcontent">
@@ -90,12 +91,38 @@ draft = "false"
 
     <div id="house_type" class="tabcontent">
         <h3>房屋類型</h3>
-        <p>Paris is the capital of France.</p>
+        <ol>
+            <li>公寓大樓 Apartment</li>
+                <p>樓層較少，整棟大樓屬於物業，所以房東即為該物業管理公司。常見選項有studio、1 bedroom...等。</p>
+            <li>共管大樓 Condo</li>
+                <p>租金通常較高，現今許多高樓層社區即屬於此類型，可能包含保全管理、健身房、泳池...等公共設施，房東一般會要求租客購買租客保險。</p>
+            <li>獨棟別墅 House</li>
+                <p>通常有2-3層樓、地下室，分租給不同房客，可能共用衛浴、廚房、洗烘衣機...等空間，需要與其他房客協調衛生維護，冬季可能需自行剷雪</p>
+            <li>聯排別墅 Townhouse</li>
+                <p>與左右鄰居相鄰之獨棟房屋。</p>
+        </ol>
     </div>
 
     <div id="contract" class="tabcontent">
         <h3>合約種類</h3>
-        <p>Tokyo is the capital of Japan.</p>
+        <p>
+            暖氣費、水電瓦斯、網路費、停車位
+            家具
+            
+            押金，可能為1-2個月，或1個月的75%（NL省），退租時房東檢查房屋後退還，如有損毀或需要清潔可能從中扣除
+            信用檢查：租客需先到信用公司（如Equifax和TransUnion）獲得一份信用分數的報告
+            推薦人
+            經紀費：如為透過地產公司、仲介
+            租客保險：一般房東會購買房屋保險，以保障天災等意外造成的損失，房客本身的個人財產則需要自行購買租客保險來保障。
+        </p>
+    </div>
+
+    <div id="warning" class="tabcontent">
+
+    </div>
+
+    <div id="provinces" class="tabcontent">
+
     </div>
 
     <script>
