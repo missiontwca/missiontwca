@@ -124,7 +124,7 @@ defaultContentLanguage = "zh-tw"
 
 [[menu.main]]
     name       = "超市購物"
-    url        = "/"
+    url        = "/life/shopping"
     weight     = 1
     parent     = "section.info_2"
 
