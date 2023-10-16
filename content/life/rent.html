@@ -18,7 +18,7 @@ draft = "false"
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             width: 20%;
-            height: 600px;
+            height: 1000px;
         }
         /* Style the buttons inside the tab */
         .tab button {
@@ -49,7 +49,7 @@ draft = "false"
             border: 1px solid #ccc;
             width: 80%;
             border-left: none;
-            height: 600px;
+            height: 1000px;
         }
     </style>
 </head>
@@ -60,7 +60,6 @@ draft = "false"
         <button class="tablinks" onclick="option(event, 'house_type')">房屋類型</button>
         <button class="tablinks" onclick="option(event, 'contract')">合約種類</button>
         <button class="tablinks" onclick="option(event, 'warning')">注意事項</button>
-        <button class="tablinks" onclick="option(event, 'provinces')">各省比較</button>
     </div>
 
     <div id="sites" class="tabcontent">
@@ -105,24 +104,57 @@ draft = "false"
 
     <div id="contract" class="tabcontent">
         <h3>合約種類</h3>
-        <p>
-            暖氣費、水電瓦斯、網路費、停車位
-            家具
-            
-            押金，可能為1-2個月，或1個月的75%（NL省），退租時房東檢查房屋後退還，如有損毀或需要清潔可能從中扣除
-            信用檢查：租客需先到信用公司（如Equifax和TransUnion）獲得一份信用分數的報告
-            推薦人
-            經紀費：如為透過地產公司、仲介
-            租客保險：一般房東會購買房屋保險，以保障天災等意外造成的損失，房客本身的個人財產則需要自行購買租客保險來保障。
-        </p>
+        <ol>
+            <li>租期</li>
+            <ul>
+                <li>年租：最普遍的類型，期滿後自動轉為month-to-month，房東可能簽訂新的合約，但房客沒有同意的義務。</li>
+                <li>定期：雙方約定固定的起止日期。</li>
+                <li>Month-to-month：按月延續的合約，通常會註明如欲終止（如：搬離、停止出租...）需於多久以前告知對方。</li>
+            </ul>
+            <li>租約內容</li>
+            <ul>
+                <li>基本資訊：雙方姓名、聯絡方式，房屋地址，租金，類型期限，繳租時間（一般為每月1號）。</li>
+                <li>押金：依各地行情，可能為1-2個月房租金額，或1個月的75%（NL省）。退租時房東檢查房屋後退還，如有損毀或需要清潔從中扣除。繳交時記得索取收據（或轉帳記錄），一為留以證據，第二為了日後報稅退稅使用。</li>
+                <li>租金項目：是否包含家具（如為unfurnished，需自行準備家具）、暖氣、水電瓦斯、網路費、停車位。</li>
+                <li>房屋檢查清單：例如插座、燈具、爐灶、冰箱、水龍頭...等是否正常運作，留存紀錄以避免爭議。</li>
+                <li>租屋規範：是否允許寵物、訪客、菸酒...等。</li>
+            </ul>
+            <li>房東要求</li>
+            <p>於一些租屋市場較緊張的地區，房東可能要求以下項目：</p>
+            <ul>
+                <li>信用檢查：租客需先到信用公司（如Equifax和TransUnion）獲得一份信用分數的報告。</li>
+                <li>推薦人：通常要求1-2人，可為前任房東或雇主。</li>
+                <li>租客保險：一般房東會購買房屋保險，以保障天災等意外造成的損失，房客本身的個人財產則需要自行購買租客保險來保障，每年費用約在$500元左右。</li>
+            </ul>
+            <li>房客權益</li>
+            <ul>
+                <li>加拿大政府規定，房屋冬天應該保證室內21度C，如果過冷，有權要求房東改善。</li>
+                <li>房東不得擅自闖入房客的房間。</li>
+                <li>房東無權隨意漲房租，以ON省為例，一年只允許調漲一次，且最多為2.5%。</li>
+            </ul>
+            <li>合約終止</li>
+            如欲在租約到期前搬離，有以下幾種處理方式：
+                <ul>
+                    <li>經房東同意可尋找其他租客重新簽訂合約或進行轉租（sublet）。</li>
+                    <li>雙方協議提前終止合約。</li>
+                    <li>持續繳交房租至合約到期。</li>
+                </ul>
+        </ol>
     </div>
 
     <div id="warning" class="tabcontent">
-
-    </div>
-
-    <div id="provinces" class="tabcontent">
-
+        <h3>注意事項</h3>
+        ❗ 如尚未入境加拿大親自（或由朋友代為）看房，房東要求預先支付房租、大筆押金，需謹慎辨別是否為詐騙。<br><br>
+        ✅ 強烈建議到當地先暫時入住旅館、Airbnb，再尋找後續長期租屋。<br><br>
+        ⚠️ 平台上一些圖片精美，但房租遠低於行情的房子，可能為房東或仲介藉此引流/釣魚，騙取訂金或吸引人去看他的其他房源。<br><br>
+        ⚠️ 如與他人合租，每位房客務必皆簽署租約，以避免日後爭議。<br><br>
+        另外建議檢查以下：
+        <ol>
+            <li>交通：是否鄰近地鐵、公車站牌，方便往來工作地點及日常採購。</li>
+            <li>安全：週圍治安情況，是否有砸窗、入室搶劫案例。</li>
+            <li>室內環境：採光是否充足，通風良好與否，尤其地下室房間更加注意。</li>
+            <li>房東及室友：是否容易聯絡，如有室友，是否能維持公共空間整潔。</li>
+        </ol>
     </div>
 
     <script>
