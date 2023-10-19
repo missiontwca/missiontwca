@@ -8,8 +8,8 @@ defaultContentLanguage = "zh-tw"
 [params]
     disabled_logo = false
     logo_text = "Universal"
-    logo = "img/maptwca2.jpg"
-    logo_small = "img/logo-small.png"
+    logo = "img/logo.jpg"
+    logo_small = "img/logo.jpg"
 
 [params.topbar]
     enable = true
