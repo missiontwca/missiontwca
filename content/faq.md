@@ -1,9 +1,6 @@
 +++
-title = "faq" 
-date = "2022-03-08"
+title = "FAQ" 
 draft = "false"
 +++
 
-## FAQ
-
-[FAQ](/)
+123

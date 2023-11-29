@@ -1,19 +1,59 @@
 baseURL = 'http://example.org/'
-languageCode = 'zh-tw'
-title = 'My New Hugo Site'
+title = '加打地圖'
 theme = "universal"
-style = "violet"
-defaultContentLanguage = "zh-tw"
+languageCode = 'zh-tw'
+defaultContentLanguage = 'zh-tw'
+# googleAnalytics = "UA-XXXXX-X"
+
+# number of words of summarized post content (default 70)
+summaryLength = 70
+
+# Define the number of posts per page
+paginate = 10
+
+# not pluralize title pages by default
+pluralizelisttitles = false
 
 [params]
     disabled_logo = false
-    logo_text = "Universal"
-    logo = "img/logo.jpg"
-    logo_small = "img/logo.jpg"
+    logo_text = "maptwca"
+    logo = "img/logo-map.jpg"
+    logo_small = "img/logo-map.jpg"
+    defaultKeywords = ["", ""]
+    defaultDescription = ""
+    # default_sharing_image = "img/sharing-default.png"
+    facebook_site = "https://www.facebook.com/maptwca/"
+    date_format = "January 6, 2006"
+    style = "default"
 
 [params.topbar]
     enable = true
     text = "<p>最新訊息：</p>"
+
+[params.widgets]
+    search = true
+    categories = false
+    tags = false
+
+[params.testimonials]
+    enable = true
+    title = "Testimonials"
+    subtitle = "vadfwjnosdnuhuawytlnl"
+
+[params.recent_posts]
+    enable = true
+    title = "最新文章"
+    subtitle = "最新文章"
+    hide_summary = true
+
+[params.footer.recent_posts]
+    enable = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
 
 [[menu.main]]
     name       = "Home"
@@ -23,58 +63,64 @@ defaultContentLanguage = "zh-tw"
     
 [[menu.main]]
     name       = "打工度假"
-    identifier = "memu.whv"
+    identifier = "memu.iec"
     url        = ""
     weight     = 2
 
 [[menu.main]]
     name       = "打工度假申請"
-    identifier = "section.whv_apply"
-    parent     = "memu.whv"
-    weight     = 1
-    post       = 2
-
-[[menu.main]]
-    name       = "入池申請"
-    url        = "/whv/apply"
-    weight     = 1
-    parent     = "section.whv_apply"
-
-[[menu.main]]
-    name       = "遞交資料"
-    url        = "/whv/file"
-    weight     = 2
-    parent     = "section.whv_apply"
-
-[[menu.main]]
-    name       = "入境"
-    identifier = "section.entry"
-    parent     = "memu.whv"
+    identifier = "section.iec_apply"
+    parent     = "memu.iec"
     weight     = 1
     post       = 3
 
 [[menu.main]]
-    name       = "行前準備"
-    url        = "/test"
+    name       = "入池抽籤"
+    url        = "/iec/pool"
     weight     = 1
-    parent     = "section.entry"
+    parent     = "section.iec_apply"
+
+[[menu.main]]
+    name       = "遞交資料"
+    url        = "/iec/file"
+    weight     = 2
+    parent     = "section.iec_apply"
+
+[[menu.main]]
+    name       = "入境必需"
+    identifier = "section.entry"
+    parent     = "memu.iec"
+    weight     = 1
+    post       = 4
+
+# [[menu.main]]
+#     name       = "行前準備"
+#     url        = "/test"
+#     weight     = 1
+#     parent     = "section.entry"
 
 [[menu.main]]
     name       = "機場入境流程"
-    url        = "/whv/airport"
+    url        = "/iec/airport"
     weight     = 2
     parent     = "section.entry"
 
 [[menu.main]]
-    name       = "保險"
-    url        = "/whv/insurance"
+    name       = "eTA"
+    url        = "/iec/eta"
     weight     = 3
     parent     = "section.entry"
 
 [[menu.main]]
-    name       = "SIN"
-    url        = "/whv/sin"
+    name       = "醫療保險"
+    url        = "/iec/insurance"
     weight     = 4
+    parent     = "section.entry"
+
+[[menu.main]]
+    name       = "社會保險號碼（SIN）"
+    url        = "/iec/sin"
+    weight     = 5
     parent     = "section.entry"
 
 [[menu.main]]
@@ -84,11 +130,11 @@ defaultContentLanguage = "zh-tw"
     weight     = 3
 
 [[menu.main]]
-    name       = "生活資訊"
+    name       = "日常資訊"
     identifier = "section.info"
     parent     = "memu.life"
     weight     = 1
-    post       = 2
+    post       = 3
 
 [[menu.main]]
     name       = "各省比較"
@@ -103,42 +149,16 @@ defaultContentLanguage = "zh-tw"
     parent     = "section.info"
 
 [[menu.main]]
-    name       = "租屋"
-    url        = "/life/rent"
+    name       = "消費購物"
+    url        = "/life/shopping"
     weight     = 3
     parent     = "section.info"
 
 [[menu.main]]
-    name       = "觀光資訊"
-    url        = "/"
+    name       = "其他實用網站（建置中）"
+    url        = "/life/sites"
     weight     = 4
     parent     = "section.info"
-
-[[menu.main]]
-    name       = "-"
-    identifier = "section.info_2"
-    url        = ""
-    parent     = "memu.life"
-    weight     = 1
-    post       = 3
-
-[[menu.main]]
-    name       = "超市購物"
-    url        = "/life/shopping"
-    weight     = 1
-    parent     = "section.info_2"
-
-[[menu.main]]
-    name       = "必備APP/網站"
-    url        = "/life/app"
-    weight     = 2
-    parent     = "section.info_2"
-
-[[menu.main]]
-    name       = "最新羊毛"
-    url        = "/"
-    weight     = 3
-    parent     = "section.info_2"
 
 [[menu.main]]
     name       = "重點必備"
@@ -149,25 +169,121 @@ defaultContentLanguage = "zh-tw"
     post       = 4
 
 [[menu.main]]
-    name       = "銀行開戶/信用卡"
-    url        = "/"
+    name       = "租屋"
+    url        = "/life/rent"
     weight     = 1
+    parent     = "section.need"
+
+[[menu.main]]
+    name       = "銀行開戶/信用卡（建置中）"
+    url        = "/life/bank"
+    weight     = 2
     parent     = "section.need"
 
 [[menu.main]]
     name       = "手機電信"
     url        = "/life/phone"
-    weight     = 2
+    weight     = 3
     parent     = "section.need"
 
 [[menu.main]]
-    name       = "駕照"
+    name       = "駕照換發"
     url        = "/life/license"
-    weight     = 3
+    weight     = 4
     parent     = "section.need"
 
 [[menu.main]]
     name       = "報稅"
     url        = "/life/tax"
-    weight     = 4
+    weight     = 5
     parent     = "section.need"
+
+[[menu.main]]
+    name       = "移民專區"
+    identifier = "memu.immigration"
+    url        = ""
+    weight     = 3
+
+[[menu.main]]
+    name       = "事前需知"
+    identifier = "section.preparation"
+    url        = ""
+    parent     = "memu.immigration"
+    weight     = 1
+    post       = 2
+
+[[menu.main]]
+    name       = "最新消息 ✴️"
+    url        = "/immigration/news"
+    weight     = 1
+    parent     = "section.preparation"
+
+[[menu.main]]
+    name       = "準備知識"
+    url        = "/immigration/knowledge"
+    weight     = 2
+    parent     = "section.preparation"
+
+[[menu.main]]
+    name       = "所需文件"
+    url        = "/immigration/documents"
+    weight     = 3
+    parent     = "section.preparation"
+
+[[menu.main]]
+    name       = "類別"
+    identifier = "section.category"
+    url        = ""
+    parent     = "memu.immigration"
+    weight     = 1
+    post       = 3
+
+[[menu.main]]
+    name       = "聯邦快速通道（EE）"
+    url        = "/immigration/ee"
+    weight     = 1
+    parent     = "section.category"
+
+[[menu.main]]
+    name       = "省提名（PNP）"
+    url        = "/immigration/pnp"
+    weight     = 2
+    parent     = "section.category"
+
+[[menu.main]]
+    name       = "其他類別"
+    url        = "/immigration/others"
+    weight     = 3
+    parent     = "section.category"
+
+[[menu.main]]
+    name       = "完成申請"
+    identifier = "section.after"
+    url        = ""
+    parent     = "memu.immigration"
+    weight     = 1
+    post       = 4
+
+[[menu.main]]
+    name       = "後續步驟"
+    url        = "/immigration/after"
+    weight     = 1
+    parent     = "section.after"
+
+[[menu.main]]
+    name       = "進度查詢（Tracker）"
+    url        = "/immigration/tracker"
+    weight     = 2
+    parent     = "section.after"
+
+[[menu.main]]
+    name       = "問題處理"
+    url        = "/immigration/problems"
+    weight     = 3
+    parent     = "section.after"
+
+[[menu.main]]
+    name       = "Contact"
+    identifier = "memu.faq"
+    url        = "/contact"
+    weight     = 4
