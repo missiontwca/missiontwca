@@ -30,21 +30,30 @@ pluralizelisttitles = false
     enable = true
     text = "<p>最新訊息：</p>"
 
+[params.carouselHomepage]
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "準備好開始打工度假了嗎？"
+    subtitle = "跟著 🌎 加打地圖 的教學，一步一步完成申請吧！"
+    link_url = "/iec/pool"
+    link_text = "入池抽籤"
+
+[params.recent_posts]
+    enable = false
+    title = "最新文章"
+    subtitle = "最新文章"
+    hide_summary = true
+
 [params.widgets]
     search = true
     categories = false
     tags = false
-
-[params.testimonials]
-    enable = true
-    title = "Testimonials"
-    subtitle = "vadfwjnosdnuhuawytlnl"
-
-[params.recent_posts]
-    enable = true
-    title = "最新文章"
-    subtitle = "最新文章"
-    hide_summary = true
 
 [params.footer.recent_posts]
     enable = false
@@ -52,6 +61,7 @@ pluralizelisttitles = false
 [taxonomies]
   category = "categories"
   tag = "tags"
+
 
 [menu]
 

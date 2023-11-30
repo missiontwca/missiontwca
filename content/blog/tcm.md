@@ -3,7 +3,7 @@ title = "blog2"
 
 tags = ["golang", "programming", "theme", "hugo"]
 categories = ["programming","lorem"]
-banner = "img/banners/banner-4.jpg"
+banner = "/img/banner/banner.jpeg"
 draft = "false"
 +++
 
