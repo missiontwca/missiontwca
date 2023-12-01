@@ -26,9 +26,9 @@ pluralizelisttitles = false
     date_format = "January 6, 2006"
     style = "default"
 
-[params.topbar]
-    enable = true
-    text = "<p>最新訊息：</p>"
+# [params.topbar]
+#     enable = true
+#     text = "<p>最新訊息：</p>"
 
 [params.carouselHomepage]
     enable = true
@@ -191,7 +191,7 @@ pluralizelisttitles = false
     parent     = "section.need"
 
 [[menu.main]]
-    name       = "手機電信"
+    name       = "手機電信（建置中）"
     url        = "/life/phone"
     weight     = 3
     parent     = "section.need"
@@ -235,8 +235,8 @@ pluralizelisttitles = false
     parent     = "section.preparation"
 
 [[menu.main]]
-    name       = "所需文件"
-    url        = "/immigration/documents"
+    name       = "策略規劃"
+    url        = "/immigration/plans"
     weight     = 3
     parent     = "section.preparation"
 
@@ -281,15 +281,21 @@ pluralizelisttitles = false
     parent     = "section.after"
 
 [[menu.main]]
+    name       = "所需文件"
+    url        = "/immigration/documents"
+    weight     = 2
+    parent     = "section.after"
+
+[[menu.main]]
     name       = "進度查詢（Tracker）"
     url        = "/immigration/tracker"
-    weight     = 2
+    weight     = 3
     parent     = "section.after"
 
 [[menu.main]]
     name       = "問題處理"
     url        = "/immigration/problems"
-    weight     = 3
+    weight     = 4
     parent     = "section.after"
 
 [[menu.main]]
