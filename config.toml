@@ -40,7 +40,7 @@ pluralizelisttitles = false
     enable = true
     icon = "far fa-file-alt"
     title = "準備好開始打工度假了嗎？"
-    subtitle = "跟著 🌎 加打地圖 的教學，一步一步完成申請吧！"
+    subtitle = "跟著 🌎 加打地圖 的教學，輕鬆完成申請吧！"
     link_url = "/iec/pool"
     link_text = "入池抽籤"
 
@@ -165,7 +165,7 @@ pluralizelisttitles = false
     parent     = "section.info"
 
 [[menu.main]]
-    name       = "其他實用網站（建置中）"
+    name       = "其他實用網站（建置中 🚧）"
     url        = "/life/sites"
     weight     = 4
     parent     = "section.info"
@@ -185,13 +185,13 @@ pluralizelisttitles = false
     parent     = "section.need"
 
 [[menu.main]]
-    name       = "銀行開戶/信用卡（建置中）"
+    name       = "銀行開戶/信用卡（建置中 🚧）"
     url        = "/life/bank"
     weight     = 2
     parent     = "section.need"
 
 [[menu.main]]
-    name       = "手機電信（建置中）"
+    name       = "手機電信"
     url        = "/life/phone"
     weight     = 3
     parent     = "section.need"
@@ -261,7 +261,7 @@ pluralizelisttitles = false
     parent     = "section.category"
 
 [[menu.main]]
-    name       = "其他類別"
+    name       = "其他類別（建置中 🚧）"
     url        = "/immigration/others"
     weight     = 3
     parent     = "section.category"
