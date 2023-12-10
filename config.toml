@@ -1,18 +1,8 @@
 baseURL = 'http://example.org/'
 title = '加打地圖'
-theme = "universal"
 languageCode = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
-# googleAnalytics = "UA-XXXXX-X"
-
-# number of words of summarized post content (default 70)
-summaryLength = 70
-
-# Define the number of posts per page
-paginate = 10
-
-# not pluralize title pages by default
-pluralizelisttitles = false
+googleAnalytics = "UA-XXXXX-X"
 
 [params]
     disabled_logo = false
