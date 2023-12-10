@@ -17,11 +17,10 @@ pluralizelisttitles = false
 [params]
     disabled_logo = false
     logo_text = "maptwca"
-    logo = "img/logo-map.jpg"
-    logo_small = "img/logo-map.jpg"
+    logo = "/img/logo-map.jpg"
+    logo_small = "/img/logo-map.jpg"
     defaultKeywords = ["", ""]
     defaultDescription = ""
-    # default_sharing_image = "img/sharing-default.png"
     facebook_site = "https://www.facebook.com/maptwca/"
     date_format = "January 6, 2006"
     style = "default"
