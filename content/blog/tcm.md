@@ -1,10 +1,9 @@
 +++
-title = "blog2" 
-
-tags = ["golang", "programming", "theme", "hugo"]
-categories = ["programming","lorem"]
-banner = "/img/banner/banner.jpeg"
+title = "TCM" 
+tags = ["", "", "", ""]
+categories = ["",""]
+banner = "/img/banner/banner.jpg"
 draft = "false"
 +++
 
-blog2
+TCM

@@ -1,17 +1,19 @@
-baseURL = 'http://example.org/'
-title = '加打地圖'
+baseURL = "https://www.maptwca.com/"
+title = "加打地圖 - 加拿大打工度假、生活、移民的好夥伴"
 languageCode = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
-googleAnalytics = "UA-XXXXX-X"
 
 [params]
     disabled_logo = false
-    logo_text = "maptwca"
+    logo_text = "加打地圖"
     logo = "/img/logo-map.jpg"
     logo_small = "/img/logo-map.jpg"
-    defaultKeywords = ["", ""]
-    defaultDescription = ""
+    defaultKeywords = ["加拿大", "加打", "打工度假", "移民"]
+    defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略...等最齊全的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
+    mainSections = ["blog"]
+#    about_us = "<p></p>"
     facebook_site = "https://www.facebook.com/maptwca/"
+    copyright = "Copyright © 2023 加打地圖 All rights reserved."
     date_format = "January 6, 2006"
     style = "default"
 
@@ -36,7 +38,7 @@ googleAnalytics = "UA-XXXXX-X"
 [params.recent_posts]
     enable = false
     title = "最新文章"
-    subtitle = "最新文章"
+    subtitle = ""
     hide_summary = true
 
 [params.widgets]
