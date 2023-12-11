@@ -252,7 +252,7 @@ defaultContentLanguage = 'zh-tw'
     parent     = "section.category"
 
 [[menu.main]]
-    name       = "其他類別（建置中 🚧）"
+    name       = "其他類別"
     url        = "/immigration/others"
     weight     = 3
     parent     = "section.category"
