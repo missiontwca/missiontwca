@@ -8,7 +8,7 @@
   # translation: "移植至 Hugo 源自"
 
 - id: contactGoTo
-  translation: "前往聯絡資訊"
+  translation: "聯絡站方"
 
 - id: contactAddrTitle
   translation: "地址"
@@ -59,7 +59,7 @@
   translation: "最新文章"
 
 - id: aboutUs
-  translation: "關於我們"
+  translation: " "
 
 - id: newer
   translation: "更新"

@@ -11,11 +11,12 @@ defaultContentLanguage = 'zh-tw'
     defaultKeywords = ["加拿大", "加打", "打工度假", "移民"]
     defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略...等最齊全的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
     mainSections = ["blog"]
-#    about_us = "<p></p>"
+    about_us = "<p></p>"
     facebook_site = "https://www.facebook.com/maptwca/"
     copyright = "Copyright © 2023 加打地圖 All rights reserved."
     date_format = "January 6, 2006"
     style = "default"
+    contact_url = "/contact"
 
 # [params.topbar]
 #     enable = true
@@ -57,7 +58,7 @@ defaultContentLanguage = 'zh-tw'
 [menu]
 
 [[menu.main]]
-    name       = "Home"
+    name       = "首頁"
     identifier = "memu.home"
     url        = "/"
     weight     = 1
@@ -288,9 +289,3 @@ defaultContentLanguage = 'zh-tw'
     url        = "/immigration/problems"
     weight     = 4
     parent     = "section.after"
-
-[[menu.main]]
-    name       = "Contact"
-    identifier = "memu.faq"
-    url        = "/contact"
-    weight     = 4

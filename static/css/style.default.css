@@ -4,7 +4,7 @@
   /* Active上邊 */
   --navbar-border-top: #B8860B;
   --button-border: #40a070;
-  --link-focus: #a07452;
+  --link-focus: #a07c5f;
   --form-shadow: rgba(106, 174, 122, 0.6);
   --pagination-bg: #cde4d2;
   --link-hover-bg: #996515;
@@ -14,11 +14,15 @@
   ccc4bc
   AF9C87
   c09a7d 奶茶棕
-  a07452
+  d1b393B3 透明奶茶
+  a07c5f 烤奶
   743e0c 棕
   B8860B 金黃棕
   CB6D51 橙金棕
   4b352e 咖啡
+  6b4221 首頁
+  F4F1ED t-milk
+  4A352E t-brown
   112ee5 寶藍
   cde4d2 淺綠
   067b39 正綠
@@ -36,6 +40,9 @@
   color: #2c3334;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.green {
+  color: #006241;
 }
 .bold {
   font-weight: bold;
@@ -370,6 +377,7 @@ ul.list-style-none {
 .navbar ul.nav > li.open > a {
   text-decoration: none !important;
   border-top: solid 5px var(--navbar-border-top);
+  border-bottom: solid 0.5px;
 }
 @media (max-width: 768px) {
   .navbar ul.nav > li.active > a,
@@ -783,13 +791,13 @@ fieldset[disabled] .btn-template-primary.active {
   color: var(--primary-accent);
   background-color: #ffffff;
 }
-#intro {
-  background: url('../img/home.jpg') no-repeat center top;
+/* #intro {
+  background: url('../img/fixed-background-2.jpg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 #intro .item {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   height: 100%;
@@ -844,7 +852,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 30px;
   margin-bottom: 0;
   position: relative;
-  background: url('../img/photogrid.jpg') center center repeat;
+  background: url('../img/photogrid.png') center center repeat;
   background-size: cover;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1212,7 +1220,7 @@ fieldset[disabled] .btn-template-primary.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #c09a7d;
+  background: #6b4221;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
@@ -1245,10 +1253,10 @@ fieldset[disabled] .btn-template-primary.active {
 .home-carousel p,
 .home-carousel ul {
   color: #fff;
+  /* color: #4b352e; */
 }
 .home-carousel h1 {
   font-weight: 700;
-
   font-size: 46px;
   letter-spacing: 0.08em;
 }
@@ -1268,7 +1276,6 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 18px;
   font-weight: 700;
   padding: 0;
-
   letter-spacing: 0.10em;
 }
 @media (max-width: 991px) {
@@ -1783,7 +1790,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('/img/texture-brown.png') center center repeat;
+  background: url('/img/texture-milk.png') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1791,8 +1798,8 @@ fieldset[disabled] .btn-template-primary.active {
   margin-bottom: 0;
 }
 #heading-breadcrumbs h1 {
-  color: white;
-
+  /* color: #4a352e; */
+  color: black;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1812,7 +1819,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 60px 0;
 }
 .bar.background-pentagon {
-  background: url('../img/texture-brown.png') center center repeat;
+  background: url('../img/texture-milk.png') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
@@ -1825,7 +1832,7 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.background-white {
   background: #fff;
 }
-.bar.background-image-fixed-1 {
+/* .bar.background-image-fixed-1 {
   background: url('../img/fixed-background-1.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1834,7 +1841,7 @@ fieldset[disabled] .btn-template-primary.active {
   background: url('../img/fixed-background-2.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 .bar.color-white h1,
 .bar.color-white h2,
 .bar.color-white h3,
