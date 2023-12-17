@@ -1,5 +1,5 @@
 baseURL = "https://www.maptwca.com/"
-title = "加打地圖 - 加拿大打工度假、生活、移民的好夥伴"
+title = "加打地圖｜加拿大打工度假、生活、移民的好夥伴"
 languageCode = 'zh-tw'
 defaultContentLanguage = 'zh-tw'
 
@@ -9,7 +9,7 @@ defaultContentLanguage = 'zh-tw'
     logo = "/img/logo-map.jpg"
     logo_small = "/img/logo-map.jpg"
     defaultKeywords = ["加拿大", "加打", "打工度假", "移民"]
-    defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略...等最齊全的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
+    defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略...等全方位的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
     mainSections = ["blog"]
     about_us = "<p></p>"
     facebook_site = "https://www.facebook.com/maptwca/"
@@ -184,7 +184,7 @@ defaultContentLanguage = 'zh-tw'
 
 [[menu.main]]
     name       = "手機電信"
-    url        = "/life/phone"
+    url        = "/life/mobile"
     weight     = 3
     parent     = "section.need"
 
@@ -260,7 +260,7 @@ defaultContentLanguage = 'zh-tw'
 
 [[menu.main]]
     name       = "完成申請"
-    identifier = "section.after"
+    identifier = "section.immigration_apply"
     url        = ""
     parent     = "memu.immigration"
     weight     = 1
@@ -268,24 +268,24 @@ defaultContentLanguage = 'zh-tw'
 
 [[menu.main]]
     name       = "後續步驟"
-    url        = "/immigration/after"
+    url        = "/immigration/steps"
     weight     = 1
-    parent     = "section.after"
+    parent     = "section.immigration_apply"
 
 [[menu.main]]
     name       = "所需文件"
     url        = "/immigration/documents"
     weight     = 2
-    parent     = "section.after"
+    parent     = "section.immigration_apply"
 
 [[menu.main]]
     name       = "進度查詢（Tracker）"
     url        = "/immigration/tracker"
     weight     = 3
-    parent     = "section.after"
+    parent     = "section.immigration_apply"
 
 [[menu.main]]
     name       = "問題處理"
     url        = "/immigration/problems"
     weight     = 4
-    parent     = "section.after"
+    parent     = "section.immigration_apply"
