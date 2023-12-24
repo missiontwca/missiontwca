@@ -233,6 +233,12 @@ defaultContentLanguage = 'zh-tw'
     parent     = "section.preparation"
 
 [[menu.main]]
+    name       = "科技/醫療業 移民懶人包"
+    url        = "/immigration/stem_health"
+    weight     = 4
+    parent     = "section.preparation"
+
+[[menu.main]]
     name       = "類別"
     identifier = "section.category"
     url        = ""
