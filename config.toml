@@ -9,7 +9,7 @@ defaultContentLanguage = 'zh-tw'
     logo = "/img/logo-map.jpg"
     logo_small = "/img/logo-map.jpg"
     defaultKeywords = ["加拿大", "加打", "打工度假", "移民"]
-    defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略...等全方位的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
+    defaultDescription = "加打地圖 提供加拿大打工度假、日常生活、移民攻略等全方位的資訊，加拿大生活的好夥伴，從行前準備到當地生活，為你全程導航。整理分析聯邦移民、省提名計劃，幫助你獨立完成申請。"
     mainSections = ["blog"]
     about_us = "<p></p>"
     facebook_site = "https://www.facebook.com/maptwca/"
@@ -77,7 +77,7 @@ defaultContentLanguage = 'zh-tw'
     post       = 3
 
 [[menu.main]]
-    name       = "入池抽籤"
+    name       = "入池抽籤教學"
     url        = "/iec/pool"
     weight     = 1
     parent     = "section.iec_apply"
@@ -215,7 +215,7 @@ defaultContentLanguage = 'zh-tw'
     post       = 2
 
 [[menu.main]]
-    name       = "最新消息 ✴️"
+    name       = "最新消息"
     url        = "/immigration/news"
     weight     = 1
     parent     = "section.preparation"
@@ -233,8 +233,8 @@ defaultContentLanguage = 'zh-tw'
     parent     = "section.preparation"
 
 [[menu.main]]
-    name       = "科技/醫療業 移民懶人包"
-    url        = "/immigration/stem_health"
+    name       = "科技/醫療業 移民懶人包 🅝🅔🅦"
+    url        = "/immigration/stem-health"
     weight     = 4
     parent     = "section.preparation"
 
