@@ -157,12 +157,6 @@ defaultContentLanguage = 'zh-tw'
     parent     = "section.info"
 
 [[menu.main]]
-    name       = "其他實用網站（建置中 🚧）"
-    url        = "/life/sites"
-    weight     = 4
-    parent     = "section.info"
-
-[[menu.main]]
     name       = "重點必備"
     identifier = "section.need"
     url        = ""
@@ -192,12 +186,6 @@ defaultContentLanguage = 'zh-tw'
     name       = "駕照換發"
     url        = "/life/license"
     weight     = 4
-    parent     = "section.need"
-
-[[menu.main]]
-    name       = "報稅"
-    url        = "/life/tax"
-    weight     = 5
     parent     = "section.need"
 
 [[menu.main]]
