@@ -18,9 +18,9 @@ defaultContentLanguage = 'zh-tw'
     style = "default"
     contact_url = "/contact"
 
-# [params.topbar]
-#     enable = true
-#     text = "<p>最新訊息：</p>"
+[params.topbar]
+    enable = false
+    text = "<p></p>"
 
 [params.carouselHomepage]
     enable = true
