@@ -20,7 +20,7 @@ defaultContentLanguage = 'zh-tw'
 
 [params.topbar]
     enable = false
-    text = "<p></p>"
+    text = ""
 
 [params.carouselHomepage]
     enable = true
